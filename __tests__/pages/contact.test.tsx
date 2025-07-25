@@ -1,10 +1,16 @@
 import { render, screen } from "@testing-library/react";
+import "@testing-library/jest-dom";
 import { describe, it, expect } from "vitest";
 import Contact from "../../src/pages/contact/contact";
+import { BrowserRouter } from "react-router";
 
 describe("Contact", () => {
   it("renders Vite and React logos with correct links", () => {
-    render(<Contact />);
+    render(
+      <BrowserRouter>
+        <Contact />
+      </BrowserRouter>
+    );
     const viteLogo = screen.getByAltText("Vite logo");
     const reactLogo = screen.getByAltText("React logo");
     expect(viteLogo).toBeInTheDocument();
@@ -14,7 +20,11 @@ describe("Contact", () => {
   });
 
   it("renders the main title", () => {
-    render(<Contact />);
-    expect(screen.getByText("CONTACT")).toBeInTheDocument();
+    render(
+      <BrowserRouter>
+        <Contact />
+      </BrowserRouter>
+    );
+    expect(screen.getByText("Contact")).toBeInTheDocument();
   });
 });

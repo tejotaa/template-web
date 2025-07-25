@@ -107,7 +107,6 @@ Ejecuta ESLint para revisar el código en busca de errores y problemas de estilo
 
 - **Framework**: Vitest con jsdom
 - **Librerías**: React Testing Library + Jest DOM
-- **Configuración**: Global setup en `__tests__/setup.ts`
 - **Ejemplo**: Tests completos de componentes en `__tests__/app.test.tsx`
 
 ### Tests E2E
