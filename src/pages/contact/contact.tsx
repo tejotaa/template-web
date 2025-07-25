@@ -17,7 +17,7 @@ export default function Contact() {
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
       </div>
-      <h1>{t("contact")}</h1>
+      <h1 data-testid="contact-title">{t("contact")}</h1>
     </AgentLayout>
   );
 }

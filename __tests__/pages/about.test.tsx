@@ -25,6 +25,6 @@ describe("About", () => {
         <About />
       </BrowserRouter>
     );
-    expect(screen.getByText("About")).toBeInTheDocument();
+    expect(screen.getByTestId("about-title")).toBeInTheDocument();
   });
 });

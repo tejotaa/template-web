@@ -17,7 +17,7 @@ export default function Home() {
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
       </div>
-      <h1>{t("home")}</h1>
+      <h1 data-testid="home-title">{t("home")}</h1>
     </AgentLayout>
   );
 }

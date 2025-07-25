@@ -17,7 +17,7 @@ export default function About() {
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
       </div>
-      <h1>{t("about")}</h1>
+      <h1 data-testid="about-title">{t("about")}</h1>
     </AgentLayout>
   );
 }
