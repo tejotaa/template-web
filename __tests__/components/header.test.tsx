@@ -1,8 +1,8 @@
-import { render, screen } from "@testing-library/react";
 import "@testing-library/jest-dom";
+import { render, screen } from "@testing-library/react";
 import { describe, it, expect, vi } from "vitest";
-import Header from "../../src/components/header/header";
 import { BrowserRouter } from "react-router";
+import Header from "../../src/components/header/header";
 
 describe("Header", () => {
   vi.mock("react-i18next", () => ({

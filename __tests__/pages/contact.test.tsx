@@ -1,8 +1,8 @@
-import { render, screen } from "@testing-library/react";
 import "@testing-library/jest-dom";
+import { render, screen } from "@testing-library/react";
 import { describe, it, expect } from "vitest";
-import Contact from "../../src/pages/contact";
 import { BrowserRouter } from "react-router";
+import Contact from "../../src/pages/contact";
 
 describe("Contact", () => {
   it("renders the main title", () => {

@@ -1,8 +1,8 @@
-import { render, screen } from "@testing-library/react";
 import "@testing-library/jest-dom";
+import { render, screen } from "@testing-library/react";
 import { describe, it, expect } from "vitest";
-import Home from "../../src/pages/home";
 import { BrowserRouter } from "react-router";
+import Home from "../../src/pages/home";
 
 describe("Home", () => {
   it("renders the main title", () => {
