@@ -1,10 +1,12 @@
 import { type PropsWithChildren, useState } from "react";
 import { ThemeProvider } from "@emotion/react";
-import { createTheme, CssBaseline } from "@mui/material";
+import { CssBaseline } from "@mui/material";
 import i18n from "@translation";
 import Header from "@components/header/header";
 import Footer from "@components/footer/footer";
 import { getLocalStorageLanguage, getLocalStorageTheme } from "@utils/utils";
+import { darkTheme } from "@themes/dark";
+import { lightTheme } from "@themes/light";
 import "./agentLayout.scss";
 
 export function AgentLayout({ children }: PropsWithChildren) {
@@ -25,30 +27,6 @@ export function AgentLayout({ children }: PropsWithChildren) {
     localStorage.setItem("theme", theme);
     setIsDarkTheme(theme === "dark" ? true : false);
   };
-
-  const darkTheme = createTheme({
-    palette: {
-      mode: "dark",
-      background: {
-        default: "#222222",
-      },
-      primary: {
-        main: "#ffffff",
-      },
-    },
-  });
-
-  const lightTheme = createTheme({
-    palette: {
-      mode: "light",
-      background: {
-        default: "#fefefeff",
-      },
-      primary: {
-        main: "#000000",
-      },
-    },
-  });
 
   return (
     <ThemeProvider theme={isDarkTheme ? darkTheme : lightTheme}>
