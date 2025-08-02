@@ -1,6 +1,6 @@
-describe("template spec", () => {
-  it("passes", () => {
+describe("contact", () => {
+  it("renders the contact page", () => {
     cy.visit("/contact");
-    cy.get("h1").should("contain", "Contact");
+    cy.get("h3").should("contain", "Contacto");
   });
 });

@@ -1,6 +1,6 @@
-import Home from "./pages/home/home.tsx";
-import About from "./pages/about/about.tsx";
-import Contact from "./pages/contact/contact.tsx";
+import Home from "@pages/home";
+import About from "@pages/about";
+import Contact from "@pages/contact";
 import { Navigate, createBrowserRouter, type RouteObject } from "react-router";
 
 export const router = createBrowserRouter([

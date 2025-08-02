@@ -1,6 +1,6 @@
-describe("template spec", () => {
-  it("passes", () => {
+describe("about", () => {
+  it("renders the about page", () => {
     cy.visit("/about");
-    cy.get("h1").should("contain", "About");
+    cy.get("h3").should("contain", "Acerca de");
   });
 });
