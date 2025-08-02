@@ -1,13 +1,11 @@
-import "./header.scss";
+import React, { useState } from "react";
 import { useLocation, useNavigate } from "react-router";
 import { useTranslation } from "react-i18next";
-import Tabs from "@mui/material/Tabs";
-import Tab from "@mui/material/Tab";
-import { useState } from "react";
+import { Tab, Tabs } from "@mui/material";
 import { ThemeSwitch } from "@components/theme/themeSwitch";
-import React from "react";
-import viteLogo from "/vite.svg";
 import LanguageSelector from "@components/language/languageSelector";
+import viteLogo from "/vite.svg";
+import "./header.scss";
 
 function samePageLinkNavigation(
   event: React.MouseEvent<HTMLAnchorElement, MouseEvent>

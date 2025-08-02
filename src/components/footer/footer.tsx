@@ -1,9 +1,7 @@
-import "./footer.scss";
 import { useTranslation } from "react-i18next";
-import Icon from "@mui/material/Icon";
+import { Icon, Divider, Typography } from "@mui/material";
 import { getYear } from "@utils/utils";
-import Divider from "@mui/material/Divider";
-import Typography from "@mui/material/Typography";
+import "./footer.scss";
 
 export default function Footer() {
   const { t } = useTranslation();

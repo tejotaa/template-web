@@ -1,7 +1,5 @@
 import styled from "@emotion/styled";
-import Switch from "@mui/material/Switch";
-import Icon from "@mui/material/Icon";
-import { useTheme, type Theme as MuiTheme } from "@mui/material/styles";
+import { useTheme, type Theme as MuiTheme, Icon, Switch } from "@mui/material";
 
 const CustomSwitch = styled(Switch)(({ theme }: { theme: MuiTheme }) => ({
   width: 60,

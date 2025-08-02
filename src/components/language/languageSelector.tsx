@@ -1,12 +1,14 @@
-import * as React from "react";
-import List from "@mui/material/List";
-import ListItem from "@mui/material/ListItem";
-import ListItemButton from "@mui/material/ListItemButton";
-import ListItemText from "@mui/material/ListItemText";
-import DialogTitle from "@mui/material/DialogTitle";
-import Dialog from "@mui/material/Dialog";
-import Icon from "@mui/material/Icon";
+import React from "react";
 import { useTranslation } from "react-i18next";
+import {
+  Dialog,
+  DialogTitle,
+  Icon,
+  List,
+  ListItem,
+  ListItemButton,
+  ListItemText,
+} from "@mui/material";
 import "./languageSelector.scss";
 
 const languages = [

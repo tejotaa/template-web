@@ -1,11 +1,10 @@
 import { type PropsWithChildren, useState } from "react";
-import Header from "@components/header/header";
-import { getLocalStorageLanguage, getLocalStorageTheme } from "@utils/utils";
-import i18n from "@translation";
 import { ThemeProvider } from "@emotion/react";
-import { createTheme } from "@mui/material/styles";
-import CssBaseline from "@mui/material/CssBaseline";
+import { createTheme, CssBaseline } from "@mui/material";
+import i18n from "@translation";
+import Header from "@components/header/header";
 import Footer from "@components/footer/footer";
+import { getLocalStorageLanguage, getLocalStorageTheme } from "@utils/utils";
 import "./agentLayout.scss";
 
 export function AgentLayout({ children }: PropsWithChildren) {
