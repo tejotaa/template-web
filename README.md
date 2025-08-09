@@ -117,6 +117,9 @@ npm run cypress:run
 # Tests unitarios con watch mode
 npm run test:watch
 
+# Ejecutar todos los tests (vitest + cypress)
+npm run test:all
+
 # Coverage de tests
 npm run coverage
 ```
