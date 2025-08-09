@@ -149,28 +149,6 @@ Ejecuta ESLint para revisar el código en busca de errores y problemas de estilo
 
 ## 📁 Estructura del Proyecto
 
-```
-template-web/
-├── public/               # Archivos estáticos
-├── src/                  # Código fuente
-│   ├── assets/           # Recursos (imágenes, iconos)
-│   ├── App.tsx           # Componente principal
-│   ├── App.css           # Estilos del componente principal
-│   ├── main.tsx          # Punto de entrada
-│   └── index.css         # Estilos globales
-├── __tests__/            # Tests unitarios
-│   ├── setup.ts          # Configuración de testing
-│   └── app.test.tsx      # Tests del componente App
-├── cypress/              # Tests E2E
-│   ├── e2e/              # Tests end-to-end
-│   ├── fixtures/         # Datos de prueba
-│   └── support/          # Comandos y configuración
-├── cypress.config.ts     # Configuración de Cypress
-├── vite.config.ts        # Configuración de Vite y Vitest
-├── eslint.config.js      # Configuración de ESLint
-└── tsconfig.*.json       # Configuración de TypeScript
-```
-
 template-web/
 ├── public/             # Archivos estáticos
 ├── src/                # Código fuente
