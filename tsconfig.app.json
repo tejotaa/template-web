@@ -32,5 +32,5 @@
     "noFallthroughCasesInSwitch": true,
     "noUncheckedSideEffectImports": true
   },
-  "include": ["src", "cypress", "vite.config.ts"]
+  "include": ["src", "translation", "__tests__", "cypress", "vite.config.ts"]
 }
