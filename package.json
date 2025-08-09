@@ -11,6 +11,7 @@
     "cypress:run": "cypress run",
     "test": "vitest run",
     "test:watch": "vitest run --watch",
+    "test:all": "vitest run && cypress run",
     "coverage": "vitest run --coverage"
   },
   "dependencies": {
